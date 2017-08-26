@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "start": "node server"
+  },
   "dependencies": {
     "axios": "^0.16.1",
     "babel": "^6.5.2",
@@ -31,7 +34,9 @@
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
     "webpack": "^2.2.1",
-    "webpack-livereload-plugin": "^0.10.0"
+    "webpack-livereload-plugin": "^0.10.0",
+    "url-loader": "^0.5.9",
+    "i18next": "^8.4.3"
   },
   "devDependencies": {
     "chai": "^3.5.0",

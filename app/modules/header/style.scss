@@ -1,0 +1,24 @@
+@import "variables";
+.header {
+	background: $WHITE;
+	.container {
+		display: flex;
+		align-items: flex-start;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.header-content {
+		flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+	}
+	.header-logo {
+		padding-right: 66px;
+	}
+	.header-menu {
+		flex: 1 0 auto;
+	}
+	.header-controls {
+		margin-right: 20px;
+	}
+}

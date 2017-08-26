@@ -1,10 +1,12 @@
 import React from 'react'
 import Footer from '../modules/footer'
-import FinalList from '../redux/containers/final-list'
+import Header from '../modules/header'
+import Main from '../modules/main'
 
 const App = () => (
-  <div>
-    <FinalList />
+  <div className='app'>
+    <Header />
+    <Main />
     <Footer />
   </div>
 )
