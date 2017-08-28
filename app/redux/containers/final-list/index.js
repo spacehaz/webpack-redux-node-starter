@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { itemToggled } from '../../actions/list'
-import List from '../../../modules/list'
+import List from 'modules/list'
 
 // const getVisibleTodos = (todos, filter) => {
 //   switch (filter) {
