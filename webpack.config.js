@@ -1,15 +1,17 @@
 let path = require('path')
 
 module.exports = {
-  entry: './app/index.js',
+  entry: [
+    'babel-polyfill',
+    './app/index.js'
+  ],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'app/assets/scripts')
   },
   context: __dirname,
   resolve: {
-    // An array of extensions that should be used to resolve modules. For example, in order to discover CoffeeScript files, your array should contain the string
-    extensions: ['.js', '.jsx', '.json', '*'],
+    extensions: ['.js', '.jsx', '.json', '.scss', '*'],
     modules: [
       path.resolve('./app'),
       path.resolve('./node_modules')
@@ -19,9 +21,8 @@ module.exports = {
     rules: [{
       test: /\.jsx?$/,
       exclude: /(node_modules|bower_components)/,
-      loader: 'babel-loader',
-      options: {
-        presets: ['react', 'es2015']
+      use: {
+        loader: 'babel-loader'
       }
     }, {
       test: /\.scss$/,
