@@ -5,8 +5,7 @@ import { NotFound } from 'components/pages'
 class AppRouter extends React.Component {
   render () {
     return <Switch>
-      <Route path='/' component={NotFound} />
-      <Route path='*' component={NotFound} />
+      <Route path='/spa' component={NotFound} />
     </Switch>
   }
 }

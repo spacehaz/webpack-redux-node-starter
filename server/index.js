@@ -1,12 +1,12 @@
-var express = require('express')
-var app = express()
-var config = require('../config')
+const express = require('express')
+const app = express()
+const config = require('../config')
+const routes = require('./routes')
+const api = require('./api')
 
 app.use(express.static('app'))
-app.get('/', (req, res) => {
-  res.sendFile('index.html')
-})
-
+routes(app)
+api(app)
 app.listen(config.port, () => {
   console.log('server is running on port: ', config.port)
 })
