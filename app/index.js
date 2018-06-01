@@ -1,16 +1,10 @@
-import { render } from 'react-dom'
+import Application from 'components/application'
 import React from 'react'
-import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import CombinedReducer from './redux/reducers'
-import App from './main'
+import ReactDOM from 'react-dom'
 
-let store = createStore(CombinedReducer)
+const elementContainer = document.getElementById('application')
+const startApplication = (Application) => {
+  ReactDOM.render(<Application />, elementContainer)
+}
 
-render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-)
-
+startApplication(Application)

@@ -1,7 +1,5 @@
 import React from 'react'
-import Footer from '../modules/footer'
-import Header from '../modules/header'
-import Main from '../modules/main'
+import { Footer, Header, Main } from 'components'
 
 const App = () => (
   <div className='app'>
