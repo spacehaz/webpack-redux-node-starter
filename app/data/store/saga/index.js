@@ -1,3 +1,5 @@
-function * saga () {}
+function * saga () {
+
+}
 
 export default saga

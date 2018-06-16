@@ -1,9 +1,10 @@
 import React from 'react'
-import t from 'texts'
-
+import { translate } from 'decorators'
+console.log({translate})
+@translate('components.footer')
 class Footer extends React.Component {
   render () {
-    return <footer className='hello'> {t('modules.footer.copyright')} </footer>
+    return <footer className='hello'>{this.t('copyright')}</footer>
   }
 }
 
