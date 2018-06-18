@@ -6,7 +6,8 @@ class AppRouter extends React.Component {
   render () {
     return <Page>
       <Switch>
-        <Route path='/spa' component={NotFound} />
+        <Route path='/store' component={NotFound} />
+        <Route path='/*' component={NotFound} />
       </Switch>
     </Page>
   }

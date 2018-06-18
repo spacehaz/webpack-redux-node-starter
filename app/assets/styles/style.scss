@@ -1,23 +1,13 @@
 @import "variables";
 @import "vendors";
-.container {
+.vm-container {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0px auto;
-	padding: 86px 20px;
-	.container-title {
-		font-size: 47px;
-		margin: 0px 0px 60px 0px;
-		background: -webkit-linear-gradient(#7EA5DE, #7461E8);
-	  -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
-	  font-weight: 300;
-	}
 }
 
 @font-face {
 	font-family: 'MyriadPro';
-	// src: url('../fonts/MyriadPro-Light.otf');
 }
 
 body {

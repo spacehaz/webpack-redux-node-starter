@@ -1,10 +1,16 @@
 import React from 'react'
 import { translate } from 'decorators'
-console.log({translate})
-@translate('components.footer')
+import moment from 'moment'
+import './styles.scss'
+
+@translate('components.common.footer')
 class Footer extends React.Component {
   render () {
-    return <footer className='hello'>{this.t('copyright')}</footer>
+    return <footer className='vm-footer'>
+      <div className='vm-container'>
+        {this.t('copyright', { year: moment().format('YYYY') })}
+      </div>
+    </footer>
   }
 }
 

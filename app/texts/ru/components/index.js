@@ -1,5 +1,5 @@
-import footer from './footer'
+import common from './common'
 
 export default {
-  footer
+  common
 }
