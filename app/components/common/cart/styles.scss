@@ -1,3 +1,4 @@
+@import "variables";
 .vm-cart {
   position: absolute;
   right: 40px;
@@ -6,4 +7,20 @@
   height: 100%;
   display: flex;
   align-items: center;
+
+  .vm-cart-body {
+    display: flex;
+    align-items: center;
+
+    .vm-cart-counter {
+      width: 16px;
+      height: 16px;
+      font-size: 12px;
+      border-radius: 16px;
+      background: $WATERMELON;
+      line-height: 16px;
+      color: #FFF;
+      margin-left: 6px;
+    }
+  }
 }

@@ -1,5 +1,5 @@
-class Api {
+import products from './products'
 
+export {
+  products
 }
-
-export default Api

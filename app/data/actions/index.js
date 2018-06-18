@@ -1,5 +1,7 @@
 import User from './user'
 import Routing from './routing'
+import Cart from './cart'
+import Products from './products'
 
 class Actions {
   constructor (env) {
@@ -8,6 +10,8 @@ class Actions {
 
     this.routing = new Routing(this)
     this.user = new User(this)
+    this.cart = new Cart(this)
+    this.products = new Products(this)
   }
 }
 

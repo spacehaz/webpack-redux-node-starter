@@ -1,9 +1,10 @@
 import React from 'react'
+import { Store } from 'components/common'
 
 class NotFound extends React.Component {
   render () {
     return <div>
-      not found
+      <Store />
     </div>
   }
 }

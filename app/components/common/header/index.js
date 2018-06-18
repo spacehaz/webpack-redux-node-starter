@@ -10,7 +10,7 @@ class Header extends React.Component {
     const { user } = this.props
     return <header className='vm-header'>
       <div className='vm-container'>
-        {this.t('title')}
+        <span onClick={() => this.actions().cart.addItem({id: 666})}>{this.t('title')}</span>
         <Cart />
       </div>
     </header>

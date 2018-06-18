@@ -1,9 +1,9 @@
 import React from 'react'
 
-class NotFound extends React.Component {
+class Store extends React.Component {
   render () {
     return <div />
   }
 }
 
-export default NotFound
+export default Store

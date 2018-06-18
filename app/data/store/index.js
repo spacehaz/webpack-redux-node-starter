@@ -4,14 +4,16 @@ import thunk from 'redux-thunk'
 import { routerReducer } from 'react-router-redux'
 import saga from './saga'
 
-import { user } from './reducers'
+import { user, cart, products } from './reducers'
 
 const sagaMiddleware = createSagaMiddleware()
 export default () => {
   const store = createStore(
     combineReducers({
       user,
-      routing: routerReducer
+      cart,
+      routing: routerReducer,
+      products
     }),
     {},
     compose(

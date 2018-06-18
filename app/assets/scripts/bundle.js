@@ -129,7 +129,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _dec, _class;\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/react.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _decorators = __webpack_require__(/*! decorators */ \"./app/decorators/index.js\");\n\n__webpack_require__(/*! ./styles.scss */ \"./app/components/common/cart/styles.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Cart = (_dec = (0, _decorators.translate)('components.common.cart'), _dec(_class = function (_React$Component) {\n  _inherits(Cart, _React$Component);\n\n  function Cart() {\n    _classCallCheck(this, Cart);\n\n    return _possibleConstructorReturn(this, (Cart.__proto__ || Object.getPrototypeOf(Cart)).apply(this, arguments));\n  }\n\n  _createClass(Cart, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        { className: 'vm-cart' },\n        _react2.default.createElement(\n          'div',\n          { className: 'vm-cart-body' },\n          this.t('title')\n        )\n      );\n    }\n  }]);\n\n  return Cart;\n}(_react2.default.Component)) || _class);\nexports.default = Cart;\n\n//# sourceURL=webpack:///./app/components/common/cart/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _dec, _dec2, _class;\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/react.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _decorators = __webpack_require__(/*! decorators */ \"./app/decorators/index.js\");\n\n__webpack_require__(/*! ./styles.scss */ \"./app/components/common/cart/styles.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Cart = (_dec = (0, _decorators.actions)(function (_ref) {\n  var items = _ref.cart.items;\n  return {\n    items: items\n  };\n}), _dec2 = (0, _decorators.translate)('components.common.cart'), _dec(_class = _dec2(_class = function (_React$Component) {\n  _inherits(Cart, _React$Component);\n\n  function Cart() {\n    _classCallCheck(this, Cart);\n\n    return _possibleConstructorReturn(this, (Cart.__proto__ || Object.getPrototypeOf(Cart)).apply(this, arguments));\n  }\n\n  _createClass(Cart, [{\n    key: 'render',\n    value: function render() {\n      var items = this.props.items;\n\n      console.log({ items: items });\n      return _react2.default.createElement(\n        'div',\n        { className: 'vm-cart' },\n        _react2.default.createElement(\n          'div',\n          { className: 'vm-cart-body' },\n          this.t('title'),\n          _react2.default.createElement(\n            'div',\n            { className: 'vm-cart-counter' },\n            items.length\n          )\n        )\n      );\n    }\n  }]);\n\n  return Cart;\n}(_react2.default.Component)) || _class) || _class);\nexports.default = Cart;\n\n//# sourceURL=webpack:///./app/components/common/cart/index.js?");
 
 /***/ }),
 
@@ -175,7 +175,7 @@ eval("// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// lo
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _dec, _dec2, _class;\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/react.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\n__webpack_require__(/*! ./styles.scss */ \"./app/components/common/header/styles.scss\");\n\nvar _decorators = __webpack_require__(/*! decorators */ \"./app/decorators/index.js\");\n\nvar _common = __webpack_require__(/*! components/common */ \"./app/components/common/index.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Header = (_dec = (0, _decorators.actions)(function (_ref) {\n  var user = _ref.user;\n  return { user: user };\n}), _dec2 = (0, _decorators.translate)('components.common.header'), _dec(_class = _dec2(_class = function (_React$Component) {\n  _inherits(Header, _React$Component);\n\n  function Header() {\n    _classCallCheck(this, Header);\n\n    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));\n  }\n\n  _createClass(Header, [{\n    key: 'render',\n    value: function render() {\n      var user = this.props.user;\n\n      return _react2.default.createElement(\n        'header',\n        { className: 'vm-header' },\n        _react2.default.createElement(\n          'div',\n          { className: 'vm-container' },\n          this.t('title'),\n          _react2.default.createElement(_common.Cart, null)\n        )\n      );\n    }\n  }]);\n\n  return Header;\n}(_react2.default.Component)) || _class) || _class);\nexports.default = Header;\n\n//# sourceURL=webpack:///./app/components/common/header/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _dec, _dec2, _class;\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/react.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\n__webpack_require__(/*! ./styles.scss */ \"./app/components/common/header/styles.scss\");\n\nvar _decorators = __webpack_require__(/*! decorators */ \"./app/decorators/index.js\");\n\nvar _common = __webpack_require__(/*! components/common */ \"./app/components/common/index.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Header = (_dec = (0, _decorators.actions)(function (_ref) {\n  var user = _ref.user;\n  return { user: user };\n}), _dec2 = (0, _decorators.translate)('components.common.header'), _dec(_class = _dec2(_class = function (_React$Component) {\n  _inherits(Header, _React$Component);\n\n  function Header() {\n    _classCallCheck(this, Header);\n\n    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));\n  }\n\n  _createClass(Header, [{\n    key: 'render',\n    value: function render() {\n      var _this2 = this;\n\n      var user = this.props.user;\n\n      return _react2.default.createElement(\n        'header',\n        { className: 'vm-header' },\n        _react2.default.createElement(\n          'div',\n          { className: 'vm-container' },\n          _react2.default.createElement(\n            'span',\n            { onClick: function onClick() {\n                return _this2.actions().cart.addItem({ id: 666 });\n              } },\n            this.t('title')\n          ),\n          _react2.default.createElement(_common.Cart, null)\n        )\n      );\n    }\n  }]);\n\n  return Header;\n}(_react2.default.Component)) || _class) || _class);\nexports.default = Header;\n\n//# sourceURL=webpack:///./app/components/common/header/index.js?");
 
 /***/ }),
 
@@ -198,7 +198,30 @@ eval("// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// lo
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.Cart = exports.Header = exports.Footer = undefined;\n\nvar _footer = __webpack_require__(/*! ./footer */ \"./app/components/common/footer/index.js\");\n\nvar _footer2 = _interopRequireDefault(_footer);\n\nvar _header = __webpack_require__(/*! ./header */ \"./app/components/common/header/index.js\");\n\nvar _header2 = _interopRequireDefault(_header);\n\nvar _cart = __webpack_require__(/*! ./cart */ \"./app/components/common/cart/index.js\");\n\nvar _cart2 = _interopRequireDefault(_cart);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.Footer = _footer2.default;\nexports.Header = _header2.default;\nexports.Cart = _cart2.default;\n\n//# sourceURL=webpack:///./app/components/common/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.Store = exports.Cart = exports.Header = exports.Footer = undefined;\n\nvar _footer = __webpack_require__(/*! ./footer */ \"./app/components/common/footer/index.js\");\n\nvar _footer2 = _interopRequireDefault(_footer);\n\nvar _header = __webpack_require__(/*! ./header */ \"./app/components/common/header/index.js\");\n\nvar _header2 = _interopRequireDefault(_header);\n\nvar _store = __webpack_require__(/*! ./store */ \"./app/components/common/store/index.js\");\n\nvar _store2 = _interopRequireDefault(_store);\n\nvar _cart = __webpack_require__(/*! ./cart */ \"./app/components/common/cart/index.js\");\n\nvar _cart2 = _interopRequireDefault(_cart);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.Footer = _footer2.default;\nexports.Header = _header2.default;\nexports.Cart = _cart2.default;\nexports.Store = _store2.default;\n\n//# sourceURL=webpack:///./app/components/common/index.js?");
+
+/***/ }),
+
+/***/ "./app/components/common/store/index.js":
+/*!**********************************************!*\
+  !*** ./app/components/common/store/index.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _dec, _dec2, _class;\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/react.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\n__webpack_require__(/*! ./styles.scss */ \"./app/components/common/store/styles.scss\");\n\nvar _decorators = __webpack_require__(/*! decorators */ \"./app/decorators/index.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Store = (_dec = (0, _decorators.actions)(function (_ref) {\n  var products = _ref.products.products;\n  return { products: products };\n}), _dec2 = (0, _decorators.translate)('components.common.header'), _dec(_class = _dec2(_class = function (_React$Component) {\n  _inherits(Store, _React$Component);\n\n  function Store() {\n    _classCallCheck(this, Store);\n\n    return _possibleConstructorReturn(this, (Store.__proto__ || Object.getPrototypeOf(Store)).apply(this, arguments));\n  }\n\n  _createClass(Store, [{\n    key: 'componentWillMount',\n    value: function componentWillMount() {\n      this.actions().products.getProducts();\n    }\n  }, {\n    key: 'render',\n    value: function render() {\n      var products = this.props.products;\n\n      console.log({ products: products });\n      return _react2.default.createElement(\n        'div',\n        { className: 'vm-store' },\n        'here is store'\n      );\n    }\n  }]);\n\n  return Store;\n}(_react2.default.Component)) || _class) || _class);\nexports.default = Store;\n\n//# sourceURL=webpack:///./app/components/common/store/index.js?");
+
+/***/ }),
+
+/***/ "./app/components/common/store/styles.scss":
+/*!*************************************************!*\
+  !*** ./app/components/common/store/styles.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// load the styles\nvar content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/sass-loader/lib/loader.js??ref--5-2!./styles.scss */ \"./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js??ref--5-2!./app/components/common/store/styles.scss\");\nif(typeof content === 'string') content = [[module.i, content, '']];\n// add the styles to the DOM\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/addStyles.js */ \"./node_modules/style-loader/addStyles.js\")(content, {});\nif(content.locals) module.exports = content.locals;\n// Hot Module Replacement\nif(false) {}\n\n//# sourceURL=webpack:///./app/components/common/store/styles.scss?");
 
 /***/ }),
 
@@ -222,7 +245,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/react.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar NotFound = function (_React$Component) {\n  _inherits(NotFound, _React$Component);\n\n  function NotFound() {\n    _classCallCheck(this, NotFound);\n\n    return _possibleConstructorReturn(this, (NotFound.__proto__ || Object.getPrototypeOf(NotFound)).apply(this, arguments));\n  }\n\n  _createClass(NotFound, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        null,\n        'not found'\n      );\n    }\n  }]);\n\n  return NotFound;\n}(_react2.default.Component);\n\nexports.default = NotFound;\n\n//# sourceURL=webpack:///./app/components/pages/not-found/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/react.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _common = __webpack_require__(/*! components/common */ \"./app/components/common/index.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar NotFound = function (_React$Component) {\n  _inherits(NotFound, _React$Component);\n\n  function NotFound() {\n    _classCallCheck(this, NotFound);\n\n    return _possibleConstructorReturn(this, (NotFound.__proto__ || Object.getPrototypeOf(NotFound)).apply(this, arguments));\n  }\n\n  _createClass(NotFound, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        null,\n        _react2.default.createElement(_common.Store, null)\n      );\n    }\n  }]);\n\n  return NotFound;\n}(_react2.default.Component);\n\nexports.default = NotFound;\n\n//# sourceURL=webpack:///./app/components/pages/not-found/index.js?");
 
 /***/ }),
 
@@ -249,6 +272,18 @@ eval("// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// lo
 
 /***/ }),
 
+/***/ "./app/data/actions/cart.js":
+/*!**********************************!*\
+  !*** ./app/data/actions/cart.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Cart = function () {\n  function Cart(actions) {\n    _classCallCheck(this, Cart);\n\n    this.actions = actions;\n  }\n\n  _createClass(Cart, [{\n    key: 'addItem',\n    value: function addItem(_ref) {\n      var id = _ref.id;\n\n      this.actions.dispatch({ type: '*CART.ADD_ITEM', id: id });\n    }\n  }]);\n\n  return Cart;\n}();\n\nexports.default = Cart;\n\n//# sourceURL=webpack:///./app/data/actions/cart.js?");
+
+/***/ }),
+
 /***/ "./app/data/actions/index.js":
 /*!***********************************!*\
   !*** ./app/data/actions/index.js ***!
@@ -257,7 +292,19 @@ eval("// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// lo
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _user = __webpack_require__(/*! ./user */ \"./app/data/actions/user.js\");\n\nvar _user2 = _interopRequireDefault(_user);\n\nvar _routing = __webpack_require__(/*! ./routing */ \"./app/data/actions/routing.js\");\n\nvar _routing2 = _interopRequireDefault(_routing);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Actions = function Actions(env) {\n  _classCallCheck(this, Actions);\n\n  this.dispatch = (env.props || env).dispatch;\n  this.history = (env.props || env).history;\n\n  this.routing = new _routing2.default(this);\n  this.user = new _user2.default(this);\n};\n\nexports.default = Actions;\n\n//# sourceURL=webpack:///./app/data/actions/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _user = __webpack_require__(/*! ./user */ \"./app/data/actions/user.js\");\n\nvar _user2 = _interopRequireDefault(_user);\n\nvar _routing = __webpack_require__(/*! ./routing */ \"./app/data/actions/routing.js\");\n\nvar _routing2 = _interopRequireDefault(_routing);\n\nvar _cart = __webpack_require__(/*! ./cart */ \"./app/data/actions/cart.js\");\n\nvar _cart2 = _interopRequireDefault(_cart);\n\nvar _products = __webpack_require__(/*! ./products */ \"./app/data/actions/products.js\");\n\nvar _products2 = _interopRequireDefault(_products);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Actions = function Actions(env) {\n  _classCallCheck(this, Actions);\n\n  this.dispatch = (env.props || env).dispatch;\n  this.history = (env.props || env).history;\n\n  this.routing = new _routing2.default(this);\n  this.user = new _user2.default(this);\n  this.cart = new _cart2.default(this);\n  this.products = new _products2.default(this);\n};\n\nexports.default = Actions;\n\n//# sourceURL=webpack:///./app/data/actions/index.js?");
+
+/***/ }),
+
+/***/ "./app/data/actions/products.js":
+/*!**************************************!*\
+  !*** ./app/data/actions/products.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Products = function () {\n  function Products(actions) {\n    _classCallCheck(this, Products);\n\n    this.actions = actions;\n  }\n\n  _createClass(Products, [{\n    key: 'getProducts',\n    value: function getProducts() {\n      this.actions.dispatch({ type: '*PRODUCTS.GET_PRODUCTS' });\n    }\n  }]);\n\n  return Products;\n}();\n\nexports.default = Products;\n\n//# sourceURL=webpack:///./app/data/actions/products.js?");
 
 /***/ }),
 
@@ -285,6 +332,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 /***/ }),
 
+/***/ "./app/data/api/fetch.js":
+/*!*******************************!*\
+  !*** ./app/data/api/fetch.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\n/* global fetch */\n\nexports.default = function (url) {\n  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};\n  var parseOptions = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};\n\n  var _url = options == null || options.method === 'get' || options.method == null ? formatUrl(url) : url;\n\n  return fetch(_url, _extends({}, DEFAULT_OPTIONS, options, {\n    headers: _extends({}, DEFAULT_OPTIONS.headers, (options || {}).headers || {})\n  })).then(function (response) {\n    if (!response.ok && options.showErrors) {\n      return response.status;\n    }\n    return parseOptions.notJSON ? response : response.json();\n  });\n};\n\nvar formatUrl = function formatUrl(url) {\n  var random = 'random=' + +new Date();\n  if (url.indexOf('?') === -1) return url + '?' + random;\n  return url + '&' + random;\n};\n\nvar DEFAULT_OPTIONS = {\n  credentials: 'same-origin',\n  headers: { 'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest' }\n};\n\n//# sourceURL=webpack:///./app/data/api/fetch.js?");
+
+/***/ }),
+
 /***/ "./app/data/api/index.js":
 /*!*******************************!*\
   !*** ./app/data/api/index.js ***!
@@ -293,7 +352,31 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Api = function Api() {\n  _classCallCheck(this, Api);\n};\n\nexports.default = Api;\n\n//# sourceURL=webpack:///./app/data/api/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.products = undefined;\n\nvar _products = __webpack_require__(/*! ./products */ \"./app/data/api/products/index.js\");\n\nvar _products2 = _interopRequireDefault(_products);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.products = _products2.default;\n\n//# sourceURL=webpack:///./app/data/api/index.js?");
+
+/***/ }),
+
+/***/ "./app/data/api/products/get-products.js":
+/*!***********************************************!*\
+  !*** ./app/data/api/products/get-products.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _fetch = __webpack_require__(/*! ../fetch */ \"./app/data/api/fetch.js\");\n\nvar _fetch2 = _interopRequireDefault(_fetch);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = function () {\n  return (0, _fetch2.default)('/api/products');\n};\n\n//# sourceURL=webpack:///./app/data/api/products/get-products.js?");
+
+/***/ }),
+
+/***/ "./app/data/api/products/index.js":
+/*!****************************************!*\
+  !*** ./app/data/api/products/index.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.getProducts = undefined;\n\nvar _getProducts = __webpack_require__(/*! ./get-products */ \"./app/data/api/products/get-products.js\");\n\nvar _getProducts2 = _interopRequireDefault(_getProducts);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.getProducts = _getProducts2.default;\n\n//# sourceURL=webpack:///./app/data/api/products/index.js?");
 
 /***/ }),
 
@@ -317,7 +400,67 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _redux = __webpack_require__(/*! redux */ \"./node_modules/redux/es/index.js\");\n\nvar _reduxSaga = __webpack_require__(/*! redux-saga */ \"./node_modules/redux-saga/es/index.js\");\n\nvar _reduxSaga2 = _interopRequireDefault(_reduxSaga);\n\nvar _reduxThunk = __webpack_require__(/*! redux-thunk */ \"./node_modules/redux-thunk/es/index.js\");\n\nvar _reduxThunk2 = _interopRequireDefault(_reduxThunk);\n\nvar _reactRouterRedux = __webpack_require__(/*! react-router-redux */ \"./node_modules/react-router-redux/lib/index.js\");\n\nvar _saga = __webpack_require__(/*! ./saga */ \"./app/data/store/saga/index.js\");\n\nvar _saga2 = _interopRequireDefault(_saga);\n\nvar _reducers = __webpack_require__(/*! ./reducers */ \"./app/data/store/reducers/index.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar sagaMiddleware = (0, _reduxSaga2.default)();\n\nexports.default = function () {\n  var store = (0, _redux.createStore)((0, _redux.combineReducers)({\n    user: _reducers.user,\n    routing: _reactRouterRedux.routerReducer\n  }), {}, (0, _redux.compose)((0, _redux.applyMiddleware)(_reduxThunk2.default), (0, _redux.applyMiddleware)(sagaMiddleware)));\n  sagaMiddleware.run(_saga2.default);\n  return store;\n};\n\n//# sourceURL=webpack:///./app/data/store/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _redux = __webpack_require__(/*! redux */ \"./node_modules/redux/es/index.js\");\n\nvar _reduxSaga = __webpack_require__(/*! redux-saga */ \"./node_modules/redux-saga/es/index.js\");\n\nvar _reduxSaga2 = _interopRequireDefault(_reduxSaga);\n\nvar _reduxThunk = __webpack_require__(/*! redux-thunk */ \"./node_modules/redux-thunk/es/index.js\");\n\nvar _reduxThunk2 = _interopRequireDefault(_reduxThunk);\n\nvar _reactRouterRedux = __webpack_require__(/*! react-router-redux */ \"./node_modules/react-router-redux/lib/index.js\");\n\nvar _saga = __webpack_require__(/*! ./saga */ \"./app/data/store/saga/index.js\");\n\nvar _saga2 = _interopRequireDefault(_saga);\n\nvar _reducers = __webpack_require__(/*! ./reducers */ \"./app/data/store/reducers/index.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar sagaMiddleware = (0, _reduxSaga2.default)();\n\nexports.default = function () {\n  var store = (0, _redux.createStore)((0, _redux.combineReducers)({\n    user: _reducers.user,\n    cart: _reducers.cart,\n    routing: _reactRouterRedux.routerReducer,\n    products: _reducers.products\n  }), {}, (0, _redux.compose)((0, _redux.applyMiddleware)(_reduxThunk2.default), (0, _redux.applyMiddleware)(sagaMiddleware)));\n  sagaMiddleware.run(_saga2.default);\n  return store;\n};\n\n//# sourceURL=webpack:///./app/data/store/index.js?");
+
+/***/ }),
+
+/***/ "./app/data/store/reducers/cart/index.js":
+/*!***********************************************!*\
+  !*** ./app/data/store/reducers/cart/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nvar _reducers = __webpack_require__(/*! ./reducers */ \"./app/data/store/reducers/cart/reducers/index.js\");\n\nvar _reducers2 = _interopRequireDefault(_reducers);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar initialState = {\n  items: []\n};\n\nexports.default = function () {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;\n  var action = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};\n\n  var newState = _extends({}, state);\n  var type = action.type;\n\n  var actionMethod = ACTIONS[type];\n  if (!actionMethod) return newState;\n\n  return actionMethod(newState, action);\n};\n\nvar ACTIONS = {\n  'CART.ADD_ITEM': _reducers2.default.addItem\n};\n\n//# sourceURL=webpack:///./app/data/store/reducers/cart/index.js?");
+
+/***/ }),
+
+/***/ "./app/data/store/reducers/cart/models/index.js":
+/*!******************************************************!*\
+  !*** ./app/data/store/reducers/cart/models/index.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.Item = undefined;\n\nvar _item = __webpack_require__(/*! ./item */ \"./app/data/store/reducers/cart/models/item.js\");\n\nvar _item2 = _interopRequireDefault(_item);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.Item = _item2.default;\n\n//# sourceURL=webpack:///./app/data/store/reducers/cart/models/index.js?");
+
+/***/ }),
+
+/***/ "./app/data/store/reducers/cart/models/item.js":
+/*!*****************************************************!*\
+  !*** ./app/data/store/reducers/cart/models/item.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar Item = function Item(_ref) {\n  var id = _ref.id;\n\n  this.id = id;\n  this.date = +new Date();\n};\n\nexports.default = Item;\n\n//# sourceURL=webpack:///./app/data/store/reducers/cart/models/item.js?");
+
+/***/ }),
+
+/***/ "./app/data/store/reducers/cart/reducers/add-item.js":
+/*!***********************************************************!*\
+  !*** ./app/data/store/reducers/cart/reducers/add-item.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nvar _models = __webpack_require__(/*! ../models */ \"./app/data/store/reducers/cart/models/index.js\");\n\nexports.default = function (state, _ref) {\n  var id = _ref.id;\n  var _state$items = state.items,\n      items = _state$items === undefined ? [] : _state$items;\n\n  var newItem = new _models.Item({ id: id });\n  var finalItems = items.concat([newItem]);\n  return _extends({}, state, { items: finalItems });\n};\n\n//# sourceURL=webpack:///./app/data/store/reducers/cart/reducers/add-item.js?");
+
+/***/ }),
+
+/***/ "./app/data/store/reducers/cart/reducers/index.js":
+/*!********************************************************!*\
+  !*** ./app/data/store/reducers/cart/reducers/index.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _addItem = __webpack_require__(/*! ./add-item */ \"./app/data/store/reducers/cart/reducers/add-item.js\");\n\nvar _addItem2 = _interopRequireDefault(_addItem);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = {\n  addItem: _addItem2.default\n};\n\n//# sourceURL=webpack:///./app/data/store/reducers/cart/reducers/index.js?");
 
 /***/ }),
 
@@ -341,7 +484,43 @@ eval("\n\nvar initialState = {};\n\n//# sourceURL=webpack:///./app/data/store/re
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.common = exports.user = undefined;\n\nvar _user = __webpack_require__(/*! ./user */ \"./app/data/store/reducers/user/index.js\");\n\nvar _user2 = _interopRequireDefault(_user);\n\nvar _common = __webpack_require__(/*! ./common */ \"./app/data/store/reducers/common/index.js\");\n\nvar _common2 = _interopRequireDefault(_common);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.user = _user2.default;\nexports.common = _common2.default;\n\n//# sourceURL=webpack:///./app/data/store/reducers/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.products = exports.cart = exports.common = exports.user = undefined;\n\nvar _user = __webpack_require__(/*! ./user */ \"./app/data/store/reducers/user/index.js\");\n\nvar _user2 = _interopRequireDefault(_user);\n\nvar _common = __webpack_require__(/*! ./common */ \"./app/data/store/reducers/common/index.js\");\n\nvar _common2 = _interopRequireDefault(_common);\n\nvar _cart = __webpack_require__(/*! ./cart */ \"./app/data/store/reducers/cart/index.js\");\n\nvar _cart2 = _interopRequireDefault(_cart);\n\nvar _products = __webpack_require__(/*! ./products */ \"./app/data/store/reducers/products/index.js\");\n\nvar _products2 = _interopRequireDefault(_products);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.user = _user2.default;\nexports.common = _common2.default;\nexports.cart = _cart2.default;\nexports.products = _products2.default;\n\n//# sourceURL=webpack:///./app/data/store/reducers/index.js?");
+
+/***/ }),
+
+/***/ "./app/data/store/reducers/products/index.js":
+/*!***************************************************!*\
+  !*** ./app/data/store/reducers/products/index.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nvar _reducers = __webpack_require__(/*! ./reducers */ \"./app/data/store/reducers/products/reducers/index.js\");\n\nvar _reducers2 = _interopRequireDefault(_reducers);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar initialState = {\n  products: []\n};\n\nexports.default = function () {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;\n  var action = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};\n\n  var newState = _extends({}, state);\n  var type = action.type;\n\n  var actionMethod = ACTIONS[type];\n  if (!actionMethod) return newState;\n\n  return actionMethod(newState, action);\n};\n\nvar ACTIONS = {\n  'PRODUCTS.SET_PRODUCTS': _reducers2.default.setProducts\n};\n\n//# sourceURL=webpack:///./app/data/store/reducers/products/index.js?");
+
+/***/ }),
+
+/***/ "./app/data/store/reducers/products/reducers/index.js":
+/*!************************************************************!*\
+  !*** ./app/data/store/reducers/products/reducers/index.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _setProducts = __webpack_require__(/*! ./set-products */ \"./app/data/store/reducers/products/reducers/set-products.js\");\n\nvar _setProducts2 = _interopRequireDefault(_setProducts);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = {\n  setProducts: _setProducts2.default\n};\n\n//# sourceURL=webpack:///./app/data/store/reducers/products/reducers/index.js?");
+
+/***/ }),
+
+/***/ "./app/data/store/reducers/products/reducers/set-products.js":
+/*!*******************************************************************!*\
+  !*** ./app/data/store/reducers/products/reducers/set-products.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nexports.default = function (state, _ref) {\n  var products = _ref.products;\n\n  return _extends({}, state, { products: products });\n};\n\n//# sourceURL=webpack:///./app/data/store/reducers/products/reducers/set-products.js?");
 
 /***/ }),
 
@@ -369,6 +548,30 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 /***/ }),
 
+/***/ "./app/data/store/saga/cart/every/add-item.js":
+/*!****************************************************!*\
+  !*** ./app/data/store/saga/cart/every/add-item.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _effects = __webpack_require__(/*! redux-saga/effects */ \"./node_modules/redux-saga/es/effects.js\");\n\nvar generator = /*#__PURE__*/regeneratorRuntime.mark(function generator(_ref) {\n  var id = _ref.id;\n  return regeneratorRuntime.wrap(function generator$(_context) {\n    while (1) {\n      switch (_context.prev = _context.next) {\n        case 0:\n          _context.prev = 0;\n          _context.next = 3;\n          return (0, _effects.put)({ type: 'CART.ADD_ITEM', id: id });\n\n        case 3:\n          _context.next = 8;\n          break;\n\n        case 5:\n          _context.prev = 5;\n          _context.t0 = _context['catch'](0);\n\n          console.error(_context.t0);\n\n        case 8:\n        case 'end':\n          return _context.stop();\n      }\n    }\n  }, generator, this, [[0, 5]]);\n});\n\nexports.default = generator;\n\n//# sourceURL=webpack:///./app/data/store/saga/cart/every/add-item.js?");
+
+/***/ }),
+
+/***/ "./app/data/store/saga/cart/index.js":
+/*!*******************************************!*\
+  !*** ./app/data/store/saga/cart/index.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = _callee;\n\nvar _effects = __webpack_require__(/*! redux-saga/effects */ \"./node_modules/redux-saga/es/effects.js\");\n\nvar _addItem = __webpack_require__(/*! ./every/add-item */ \"./app/data/store/saga/cart/every/add-item.js\");\n\nvar _addItem2 = _interopRequireDefault(_addItem);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _marked = /*#__PURE__*/regeneratorRuntime.mark(_callee);\n\nfunction _callee() {\n  return regeneratorRuntime.wrap(function _callee$(_context) {\n    while (1) {\n      switch (_context.prev = _context.next) {\n        case 0:\n          _context.next = 2;\n          return (0, _effects.takeEvery)('*CART.ADD_ITEM', _addItem2.default);\n\n        case 2:\n        case 'end':\n          return _context.stop();\n      }\n    }\n  }, _marked, this);\n}\n\n//# sourceURL=webpack:///./app/data/store/saga/cart/index.js?");
+
+/***/ }),
+
 /***/ "./app/data/store/saga/index.js":
 /*!**************************************!*\
   !*** ./app/data/store/saga/index.js ***!
@@ -377,7 +580,31 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _marked = /*#__PURE__*/regeneratorRuntime.mark(saga);\n\nfunction saga() {\n  return regeneratorRuntime.wrap(function saga$(_context) {\n    while (1) {\n      switch (_context.prev = _context.next) {\n        case 0:\n        case \"end\":\n          return _context.stop();\n      }\n    }\n  }, _marked, this);\n}\n\nexports.default = saga;\n\n//# sourceURL=webpack:///./app/data/store/saga/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _cart = __webpack_require__(/*! ./cart */ \"./app/data/store/saga/cart/index.js\");\n\nvar _cart2 = _interopRequireDefault(_cart);\n\nvar _products = __webpack_require__(/*! ./products */ \"./app/data/store/saga/products/index.js\");\n\nvar _products2 = _interopRequireDefault(_products);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _marked = /*#__PURE__*/regeneratorRuntime.mark(saga);\n\nfunction saga() {\n  return regeneratorRuntime.wrap(function saga$(_context) {\n    while (1) {\n      switch (_context.prev = _context.next) {\n        case 0:\n          return _context.delegateYield((0, _cart2.default)(), 't0', 1);\n\n        case 1:\n          return _context.delegateYield((0, _products2.default)(), 't1', 2);\n\n        case 2:\n        case 'end':\n          return _context.stop();\n      }\n    }\n  }, _marked, this);\n}\n\nexports.default = saga;\n\n//# sourceURL=webpack:///./app/data/store/saga/index.js?");
+
+/***/ }),
+
+/***/ "./app/data/store/saga/products/every/get-products.js":
+/*!************************************************************!*\
+  !*** ./app/data/store/saga/products/every/get-products.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _effects = __webpack_require__(/*! redux-saga/effects */ \"./node_modules/redux-saga/es/effects.js\");\n\nvar _products = __webpack_require__(/*! data/api/products */ \"./app/data/api/products/index.js\");\n\nvar generator = /*#__PURE__*/regeneratorRuntime.mark(function generator(_ref) {\n  var id = _ref.id;\n  var productsFromDB;\n  return regeneratorRuntime.wrap(function generator$(_context) {\n    while (1) {\n      switch (_context.prev = _context.next) {\n        case 0:\n          _context.prev = 0;\n          _context.next = 3;\n          return (0, _effects.call)(_products.getProducts);\n\n        case 3:\n          productsFromDB = _context.sent;\n\n          console.log({ productsFromDB: productsFromDB });\n          _context.next = 10;\n          break;\n\n        case 7:\n          _context.prev = 7;\n          _context.t0 = _context['catch'](0);\n\n          console.error(_context.t0);\n\n        case 10:\n        case 'end':\n          return _context.stop();\n      }\n    }\n  }, generator, this, [[0, 7]]);\n});\n\nexports.default = generator;\n\n//# sourceURL=webpack:///./app/data/store/saga/products/every/get-products.js?");
+
+/***/ }),
+
+/***/ "./app/data/store/saga/products/index.js":
+/*!***********************************************!*\
+  !*** ./app/data/store/saga/products/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = _callee;\n\nvar _effects = __webpack_require__(/*! redux-saga/effects */ \"./node_modules/redux-saga/es/effects.js\");\n\nvar _getProducts = __webpack_require__(/*! ./every/get-products */ \"./app/data/store/saga/products/every/get-products.js\");\n\nvar _getProducts2 = _interopRequireDefault(_getProducts);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _marked = /*#__PURE__*/regeneratorRuntime.mark(_callee);\n\nfunction _callee() {\n  return regeneratorRuntime.wrap(function _callee$(_context) {\n    while (1) {\n      switch (_context.prev = _context.next) {\n        case 0:\n          _context.next = 2;\n          return (0, _effects.takeEvery)('*PRODUCTS.GET_PRODUCTS', _getProducts2.default);\n\n        case 2:\n        case 'end':\n          return _context.stop();\n      }\n    }\n  }, _marked, this);\n}\n\n//# sourceURL=webpack:///./app/data/store/saga/products/index.js?");
 
 /***/ }),
 
@@ -4233,7 +4460,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/c
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".vm-cart {\\n  position: absolute;\\n  right: 40px;\\n  top: 0;\\n  bottom: 0;\\n  height: 100%;\\n  display: flex;\\n  align-items: center; }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./app/components/common/cart/styles.scss?./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js??ref--5-2");
+eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".vm-cart {\\n  position: absolute;\\n  right: 40px;\\n  top: 0;\\n  bottom: 0;\\n  height: 100%;\\n  display: flex;\\n  align-items: center; }\\n  .vm-cart .vm-cart-body {\\n    display: flex;\\n    align-items: center; }\\n    .vm-cart .vm-cart-body .vm-cart-counter {\\n      width: 16px;\\n      height: 16px;\\n      font-size: 12px;\\n      border-radius: 16px;\\n      background: #FF4E4E;\\n      line-height: 16px;\\n      color: #FFF;\\n      margin-left: 6px; }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./app/components/common/cart/styles.scss?./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js??ref--5-2");
 
 /***/ }),
 
@@ -4256,6 +4483,17 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../node_module
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".vm-header {\\n  position: relative;\\n  display: flex;\\n  height: 80px;\\n  font-size: 12px;\\n  justify-content: center;\\n  align-items: center;\\n  text-align: center; }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./app/components/common/header/styles.scss?./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js??ref--5-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js??ref--5-2!./app/components/common/store/styles.scss":
+/*!******************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js??ref--5-2!./app/components/common/store/styles.scss ***!
+  \******************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./app/components/common/store/styles.scss?./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js??ref--5-2");
 
 /***/ }),
 
@@ -9137,14 +9375,25 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 
 /***/ }),
 
+/***/ "./node_modules/whatwg-fetch/fetch.js":
+/*!********************************************!*\
+  !*** ./node_modules/whatwg-fetch/fetch.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("(function(self) {\n  'use strict';\n\n  if (self.fetch) {\n    return\n  }\n\n  var support = {\n    searchParams: 'URLSearchParams' in self,\n    iterable: 'Symbol' in self && 'iterator' in Symbol,\n    blob: 'FileReader' in self && 'Blob' in self && (function() {\n      try {\n        new Blob()\n        return true\n      } catch(e) {\n        return false\n      }\n    })(),\n    formData: 'FormData' in self,\n    arrayBuffer: 'ArrayBuffer' in self\n  }\n\n  if (support.arrayBuffer) {\n    var viewClasses = [\n      '[object Int8Array]',\n      '[object Uint8Array]',\n      '[object Uint8ClampedArray]',\n      '[object Int16Array]',\n      '[object Uint16Array]',\n      '[object Int32Array]',\n      '[object Uint32Array]',\n      '[object Float32Array]',\n      '[object Float64Array]'\n    ]\n\n    var isDataView = function(obj) {\n      return obj && DataView.prototype.isPrototypeOf(obj)\n    }\n\n    var isArrayBufferView = ArrayBuffer.isView || function(obj) {\n      return obj && viewClasses.indexOf(Object.prototype.toString.call(obj)) > -1\n    }\n  }\n\n  function normalizeName(name) {\n    if (typeof name !== 'string') {\n      name = String(name)\n    }\n    if (/[^a-z0-9\\-#$%&'*+.\\^_`|~]/i.test(name)) {\n      throw new TypeError('Invalid character in header field name')\n    }\n    return name.toLowerCase()\n  }\n\n  function normalizeValue(value) {\n    if (typeof value !== 'string') {\n      value = String(value)\n    }\n    return value\n  }\n\n  // Build a destructive iterator for the value list\n  function iteratorFor(items) {\n    var iterator = {\n      next: function() {\n        var value = items.shift()\n        return {done: value === undefined, value: value}\n      }\n    }\n\n    if (support.iterable) {\n      iterator[Symbol.iterator] = function() {\n        return iterator\n      }\n    }\n\n    return iterator\n  }\n\n  function Headers(headers) {\n    this.map = {}\n\n    if (headers instanceof Headers) {\n      headers.forEach(function(value, name) {\n        this.append(name, value)\n      }, this)\n    } else if (Array.isArray(headers)) {\n      headers.forEach(function(header) {\n        this.append(header[0], header[1])\n      }, this)\n    } else if (headers) {\n      Object.getOwnPropertyNames(headers).forEach(function(name) {\n        this.append(name, headers[name])\n      }, this)\n    }\n  }\n\n  Headers.prototype.append = function(name, value) {\n    name = normalizeName(name)\n    value = normalizeValue(value)\n    var oldValue = this.map[name]\n    this.map[name] = oldValue ? oldValue+','+value : value\n  }\n\n  Headers.prototype['delete'] = function(name) {\n    delete this.map[normalizeName(name)]\n  }\n\n  Headers.prototype.get = function(name) {\n    name = normalizeName(name)\n    return this.has(name) ? this.map[name] : null\n  }\n\n  Headers.prototype.has = function(name) {\n    return this.map.hasOwnProperty(normalizeName(name))\n  }\n\n  Headers.prototype.set = function(name, value) {\n    this.map[normalizeName(name)] = normalizeValue(value)\n  }\n\n  Headers.prototype.forEach = function(callback, thisArg) {\n    for (var name in this.map) {\n      if (this.map.hasOwnProperty(name)) {\n        callback.call(thisArg, this.map[name], name, this)\n      }\n    }\n  }\n\n  Headers.prototype.keys = function() {\n    var items = []\n    this.forEach(function(value, name) { items.push(name) })\n    return iteratorFor(items)\n  }\n\n  Headers.prototype.values = function() {\n    var items = []\n    this.forEach(function(value) { items.push(value) })\n    return iteratorFor(items)\n  }\n\n  Headers.prototype.entries = function() {\n    var items = []\n    this.forEach(function(value, name) { items.push([name, value]) })\n    return iteratorFor(items)\n  }\n\n  if (support.iterable) {\n    Headers.prototype[Symbol.iterator] = Headers.prototype.entries\n  }\n\n  function consumed(body) {\n    if (body.bodyUsed) {\n      return Promise.reject(new TypeError('Already read'))\n    }\n    body.bodyUsed = true\n  }\n\n  function fileReaderReady(reader) {\n    return new Promise(function(resolve, reject) {\n      reader.onload = function() {\n        resolve(reader.result)\n      }\n      reader.onerror = function() {\n        reject(reader.error)\n      }\n    })\n  }\n\n  function readBlobAsArrayBuffer(blob) {\n    var reader = new FileReader()\n    var promise = fileReaderReady(reader)\n    reader.readAsArrayBuffer(blob)\n    return promise\n  }\n\n  function readBlobAsText(blob) {\n    var reader = new FileReader()\n    var promise = fileReaderReady(reader)\n    reader.readAsText(blob)\n    return promise\n  }\n\n  function readArrayBufferAsText(buf) {\n    var view = new Uint8Array(buf)\n    var chars = new Array(view.length)\n\n    for (var i = 0; i < view.length; i++) {\n      chars[i] = String.fromCharCode(view[i])\n    }\n    return chars.join('')\n  }\n\n  function bufferClone(buf) {\n    if (buf.slice) {\n      return buf.slice(0)\n    } else {\n      var view = new Uint8Array(buf.byteLength)\n      view.set(new Uint8Array(buf))\n      return view.buffer\n    }\n  }\n\n  function Body() {\n    this.bodyUsed = false\n\n    this._initBody = function(body) {\n      this._bodyInit = body\n      if (!body) {\n        this._bodyText = ''\n      } else if (typeof body === 'string') {\n        this._bodyText = body\n      } else if (support.blob && Blob.prototype.isPrototypeOf(body)) {\n        this._bodyBlob = body\n      } else if (support.formData && FormData.prototype.isPrototypeOf(body)) {\n        this._bodyFormData = body\n      } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {\n        this._bodyText = body.toString()\n      } else if (support.arrayBuffer && support.blob && isDataView(body)) {\n        this._bodyArrayBuffer = bufferClone(body.buffer)\n        // IE 10-11 can't handle a DataView body.\n        this._bodyInit = new Blob([this._bodyArrayBuffer])\n      } else if (support.arrayBuffer && (ArrayBuffer.prototype.isPrototypeOf(body) || isArrayBufferView(body))) {\n        this._bodyArrayBuffer = bufferClone(body)\n      } else {\n        throw new Error('unsupported BodyInit type')\n      }\n\n      if (!this.headers.get('content-type')) {\n        if (typeof body === 'string') {\n          this.headers.set('content-type', 'text/plain;charset=UTF-8')\n        } else if (this._bodyBlob && this._bodyBlob.type) {\n          this.headers.set('content-type', this._bodyBlob.type)\n        } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {\n          this.headers.set('content-type', 'application/x-www-form-urlencoded;charset=UTF-8')\n        }\n      }\n    }\n\n    if (support.blob) {\n      this.blob = function() {\n        var rejected = consumed(this)\n        if (rejected) {\n          return rejected\n        }\n\n        if (this._bodyBlob) {\n          return Promise.resolve(this._bodyBlob)\n        } else if (this._bodyArrayBuffer) {\n          return Promise.resolve(new Blob([this._bodyArrayBuffer]))\n        } else if (this._bodyFormData) {\n          throw new Error('could not read FormData body as blob')\n        } else {\n          return Promise.resolve(new Blob([this._bodyText]))\n        }\n      }\n\n      this.arrayBuffer = function() {\n        if (this._bodyArrayBuffer) {\n          return consumed(this) || Promise.resolve(this._bodyArrayBuffer)\n        } else {\n          return this.blob().then(readBlobAsArrayBuffer)\n        }\n      }\n    }\n\n    this.text = function() {\n      var rejected = consumed(this)\n      if (rejected) {\n        return rejected\n      }\n\n      if (this._bodyBlob) {\n        return readBlobAsText(this._bodyBlob)\n      } else if (this._bodyArrayBuffer) {\n        return Promise.resolve(readArrayBufferAsText(this._bodyArrayBuffer))\n      } else if (this._bodyFormData) {\n        throw new Error('could not read FormData body as text')\n      } else {\n        return Promise.resolve(this._bodyText)\n      }\n    }\n\n    if (support.formData) {\n      this.formData = function() {\n        return this.text().then(decode)\n      }\n    }\n\n    this.json = function() {\n      return this.text().then(JSON.parse)\n    }\n\n    return this\n  }\n\n  // HTTP methods whose capitalization should be normalized\n  var methods = ['DELETE', 'GET', 'HEAD', 'OPTIONS', 'POST', 'PUT']\n\n  function normalizeMethod(method) {\n    var upcased = method.toUpperCase()\n    return (methods.indexOf(upcased) > -1) ? upcased : method\n  }\n\n  function Request(input, options) {\n    options = options || {}\n    var body = options.body\n\n    if (input instanceof Request) {\n      if (input.bodyUsed) {\n        throw new TypeError('Already read')\n      }\n      this.url = input.url\n      this.credentials = input.credentials\n      if (!options.headers) {\n        this.headers = new Headers(input.headers)\n      }\n      this.method = input.method\n      this.mode = input.mode\n      if (!body && input._bodyInit != null) {\n        body = input._bodyInit\n        input.bodyUsed = true\n      }\n    } else {\n      this.url = String(input)\n    }\n\n    this.credentials = options.credentials || this.credentials || 'omit'\n    if (options.headers || !this.headers) {\n      this.headers = new Headers(options.headers)\n    }\n    this.method = normalizeMethod(options.method || this.method || 'GET')\n    this.mode = options.mode || this.mode || null\n    this.referrer = null\n\n    if ((this.method === 'GET' || this.method === 'HEAD') && body) {\n      throw new TypeError('Body not allowed for GET or HEAD requests')\n    }\n    this._initBody(body)\n  }\n\n  Request.prototype.clone = function() {\n    return new Request(this, { body: this._bodyInit })\n  }\n\n  function decode(body) {\n    var form = new FormData()\n    body.trim().split('&').forEach(function(bytes) {\n      if (bytes) {\n        var split = bytes.split('=')\n        var name = split.shift().replace(/\\+/g, ' ')\n        var value = split.join('=').replace(/\\+/g, ' ')\n        form.append(decodeURIComponent(name), decodeURIComponent(value))\n      }\n    })\n    return form\n  }\n\n  function parseHeaders(rawHeaders) {\n    var headers = new Headers()\n    // Replace instances of \\r\\n and \\n followed by at least one space or horizontal tab with a space\n    // https://tools.ietf.org/html/rfc7230#section-3.2\n    var preProcessedHeaders = rawHeaders.replace(/\\r?\\n[\\t ]+/g, ' ')\n    preProcessedHeaders.split(/\\r?\\n/).forEach(function(line) {\n      var parts = line.split(':')\n      var key = parts.shift().trim()\n      if (key) {\n        var value = parts.join(':').trim()\n        headers.append(key, value)\n      }\n    })\n    return headers\n  }\n\n  Body.call(Request.prototype)\n\n  function Response(bodyInit, options) {\n    if (!options) {\n      options = {}\n    }\n\n    this.type = 'default'\n    this.status = options.status === undefined ? 200 : options.status\n    this.ok = this.status >= 200 && this.status < 300\n    this.statusText = 'statusText' in options ? options.statusText : 'OK'\n    this.headers = new Headers(options.headers)\n    this.url = options.url || ''\n    this._initBody(bodyInit)\n  }\n\n  Body.call(Response.prototype)\n\n  Response.prototype.clone = function() {\n    return new Response(this._bodyInit, {\n      status: this.status,\n      statusText: this.statusText,\n      headers: new Headers(this.headers),\n      url: this.url\n    })\n  }\n\n  Response.error = function() {\n    var response = new Response(null, {status: 0, statusText: ''})\n    response.type = 'error'\n    return response\n  }\n\n  var redirectStatuses = [301, 302, 303, 307, 308]\n\n  Response.redirect = function(url, status) {\n    if (redirectStatuses.indexOf(status) === -1) {\n      throw new RangeError('Invalid status code')\n    }\n\n    return new Response(null, {status: status, headers: {location: url}})\n  }\n\n  self.Headers = Headers\n  self.Request = Request\n  self.Response = Response\n\n  self.fetch = function(input, init) {\n    return new Promise(function(resolve, reject) {\n      var request = new Request(input, init)\n      var xhr = new XMLHttpRequest()\n\n      xhr.onload = function() {\n        var options = {\n          status: xhr.status,\n          statusText: xhr.statusText,\n          headers: parseHeaders(xhr.getAllResponseHeaders() || '')\n        }\n        options.url = 'responseURL' in xhr ? xhr.responseURL : options.headers.get('X-Request-URL')\n        var body = 'response' in xhr ? xhr.response : xhr.responseText\n        resolve(new Response(body, options))\n      }\n\n      xhr.onerror = function() {\n        reject(new TypeError('Network request failed'))\n      }\n\n      xhr.ontimeout = function() {\n        reject(new TypeError('Network request failed'))\n      }\n\n      xhr.open(request.method, request.url, true)\n\n      if (request.credentials === 'include') {\n        xhr.withCredentials = true\n      } else if (request.credentials === 'omit') {\n        xhr.withCredentials = false\n      }\n\n      if ('responseType' in xhr && support.blob) {\n        xhr.responseType = 'blob'\n      }\n\n      request.headers.forEach(function(value, name) {\n        xhr.setRequestHeader(name, value)\n      })\n\n      xhr.send(typeof request._bodyInit === 'undefined' ? null : request._bodyInit)\n    })\n  }\n  self.fetch.polyfill = true\n})(typeof self !== 'undefined' ? self : this);\n\n\n//# sourceURL=webpack:///./node_modules/whatwg-fetch/fetch.js?");
+
+/***/ }),
+
 /***/ 0:
-/*!*******************************************!*\
-  !*** multi babel-polyfill ./app/index.js ***!
-  \*******************************************/
+/*!********************************************************!*\
+  !*** multi babel-polyfill whatwg-fetch ./app/index.js ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! babel-polyfill */\"./node_modules/babel-polyfill/lib/index.js\");\nmodule.exports = __webpack_require__(/*! ./app/index.js */\"./app/index.js\");\n\n\n//# sourceURL=webpack:///multi_babel-polyfill_./app/index.js?");
+eval("__webpack_require__(/*! babel-polyfill */\"./node_modules/babel-polyfill/lib/index.js\");\n__webpack_require__(/*! whatwg-fetch */\"./node_modules/whatwg-fetch/fetch.js\");\nmodule.exports = __webpack_require__(/*! ./app/index.js */\"./app/index.js\");\n\n\n//# sourceURL=webpack:///multi_babel-polyfill_whatwg-fetch_./app/index.js?");
 
 /***/ })
 
