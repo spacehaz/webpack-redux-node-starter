@@ -1,5 +1,5 @@
-import modules from './modules'
+import components from './components'
 
 module.exports = {
-  modules
+  components
 }
