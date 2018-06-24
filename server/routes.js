@@ -15,9 +15,11 @@ module.exports = app => {
 }
 
 const PRODUCTS = [{
-  title: 'Vegemite',
+  title: 'Vegemite Toast Extract',
   id: 1,
   weight: 220,
   qty: 10,
-  type: 'spread'
+  type: 'spread',
+  price: 900,
+  imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/61j9GPlAR%2BL._SL1000_.jpg'
 }]

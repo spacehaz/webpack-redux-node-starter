@@ -1,9 +1,17 @@
 import React from 'react'
+import { Store } from 'components/common'
+import { actions } from 'decorators'
 
-class Store extends React.Component {
+@actions(({products: { products }}) => ({ products }))
+class StorePage extends React.Component {
   render () {
-    return <div />
+    const { products } = this.props
+    return <div className='vm-store-page'>
+      <div className='vm-container'>
+        <Store products={products} />
+      </div>
+    </div>
   }
 }
 
-export default Store
+export default StorePage

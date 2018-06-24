@@ -4,8 +4,8 @@ import { getProducts } from 'data/api/products'
 
 const generator = function * ({id}) {
   try {
-    const productsFromDB = yield call(getProducts)
-    console.log({productsFromDB})
+    const products = yield call(getProducts)
+    yield put({ type: 'PRODUCTS.SET_PRODUCTS', products })
   } catch (e) {
     console.error(e)
   }
