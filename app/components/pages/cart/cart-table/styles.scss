@@ -1,12 +1,39 @@
 .vm-cart-table {
+  max-width: 800px;
+  margin: 0 auto;
+
+  .vm-cart-table-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+  }
+
   table {
-    tr {
-      border-bottom: 1px solid #ddd;
-      td {
-        border-bottom: 1px solid #fff;
-        color: #669;
-        border-top: 1px solid transparent;
-        padding: 8px;
+    width: 100%;
+
+    thead {
+      th {
+        font-size: 12px;
+        font-weight: normal;
+        text-align: left;
+      }
+    }
+    tbody {
+      tr {
+        td {
+          border-bottom: 1px solid #f2f2f2;
+          font-size: 14px;
+          color: #669;
+          border-top: 1px solid transparent;
+          padding: 8px 0px 8px 0px;
+          &.vm-cart-table-title {
+            width: 400px;
+          }
+
+          &.vm-cart-table-remove {
+            cursor: pointer;
+          }
+        }
       }
     }
   }

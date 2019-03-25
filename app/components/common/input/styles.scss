@@ -1,0 +1,35 @@
+@import "variables";
+.vm-input {
+  position: relative;
+  margin-bottom: 10px;
+
+  &.vm-input-errored {
+    .vm-input-field {
+      border: 1px solid $WATERMELON;
+      color: $WATERMELON;
+    }
+  }
+
+  .vm-input-field {
+    width: 100%;
+    border: 1px solid $MATTE;
+    outline: none;
+    height: 30px;
+    border-radius: 3px;
+    color: $MATTE;
+    padding: 6px;
+  }
+
+  .vm-input-error {
+    position: absolute;
+    right: 5px;
+    height: 20px;
+    top: 5px;
+    line-height: 20px;
+    font-size: 10px;
+    border-radius: 4px;
+    padding: 0px 6px;
+    color: $WHITE;
+    background-color: $WATERMELON;
+  }
+}

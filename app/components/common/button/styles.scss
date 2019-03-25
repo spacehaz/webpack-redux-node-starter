@@ -1,0 +1,23 @@
+@import "variables";
+.vm-button {
+  height: 32px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  transition: opacity .3s;
+
+  &:active {
+    opacity: .8;
+  }
+
+  &.vm-button-default {
+    background: $TEAL;
+    color: #FFF;
+  }
+
+  &.vm-button-cancel {
+    background: $WATERMELON;
+    color: #FFF;
+  }
+}

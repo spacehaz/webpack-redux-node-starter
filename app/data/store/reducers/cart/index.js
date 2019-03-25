@@ -14,5 +14,7 @@ export default (state = initialState, action = {}) => {
 }
 
 const ACTIONS = {
-  'CART.ADD_ITEM': reducers.addItem
+  'CART.ADD_ITEM': reducers.addItem,
+  'CART.SET_ITEMS': reducers.setItems,
+  'CART.REMOVE_ITEM': reducers.removeItem
 }

@@ -6,7 +6,7 @@ class CartPage extends React.Component {
   render () {
     return <div className='vm-cart-page'>
       <div className='vm-container'>
-        <CartTable />
+        <CartTable testProp='sdasd' />
       </div>
     </div>
   }

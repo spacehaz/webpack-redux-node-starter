@@ -1,7 +1,7 @@
 var path = require('path')
 
 module.exports = app => {
-  app.get(['/spa', '/spa/*'], (req, res) => {
+  app.get(['/store', '/store/*'], (req, res) => {
     res.sendFile('index.html', { root: path.join(__dirname, '../app') })
   })
 

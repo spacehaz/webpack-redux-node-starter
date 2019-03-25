@@ -1,0 +1,15 @@
+.vm-checkout-details {
+  max-width: 600px;
+  margin: 0 auto;
+
+  .vm-checkout-details-split {
+    display: flex;
+
+    .vm-input {
+      flex: 1 1 50%;
+      &:last-child {
+        margin-left: 20px;
+      }
+    }
+  }
+}

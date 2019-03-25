@@ -6,7 +6,7 @@ import './styles.scss'
 class Cart extends React.Component {
   render () {
     const { items } = this.props
-    return <div className='vm-cart'>
+    return <div className='vm-cart' onClick={() => this.actions().routing.goTo('/store/cart')}>
       <div className='vm-cart-body'>
         {this.t('title')}
         <div className='vm-cart-counter'>{items.length}</div>
